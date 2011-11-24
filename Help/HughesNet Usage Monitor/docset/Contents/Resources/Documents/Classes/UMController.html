@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>UMController class reference</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../css/screen.css" />
+  <meta name="generator" content="appledoc" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>UMController class reference</h1>
+    <table summary="Basic information" id="classInfo">
+      <tr class="alt">
+        <td><label id="classDeclaration">Inherits from</label></td>
+        <td>NSObject</td>
+      </tr>
+      <tr>
+        <td><label id="classDeclaration">Declared in</label></td>
+        <td>UMController.h</td>
+      </tr>
+    </table>
+      <h2>Overview</h2>
+<p>The <a href="">UMController</a> creates a status bar item with a menu that tracks the download allowance of a HughesNet satellite internet account with an HN9000 router. The percent of the daily allowance remaining is shown in the system status bar. Clicking on the item reveals a menu with information about the reset time, the actual allowance and allowance remaining, whether or not the Fair Access Policy (FAP) has been violated and download restrictions are in place, and a Quit item that will allow the application to be terminated. The appliction runs as a Menulet without a Dock icon.</p>
+<p>Created by Joshua Moody on 10/28/10. Copyright 2010 The Little Joy Software Company. All rights reserved. </p>
+      <h2>Tasks</h2>
+      <h3>Other</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#menu>menu</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#resetTimeMenuItem>resetTimeMenuItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#fapMenuItem>fapMenuItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowanceMenuItem>allowanceMenuItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#refreshMenuItem>refreshMenuItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#quitMenuItem>quitMenuItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#statusItem>statusItem</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#statusBar>statusBar</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#percentString>percentString</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#resetTime>resetTime</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#violatedFapString>violatedFapString</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowance>allowance</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#allowanceRemaining>allowanceRemaining</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#prefController>prefController</a></code>
+            <span class="specialType">property</span>
+          </span>
+        </li>
+      </ul>
+      <h3>Other</h3>
+      <ul class="methods">
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#init>- init</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#awakeFromNib>- awakeFromNib</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#captureStringsFromWebpage:>- captureStringsFromWebpage:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#setStatusStrings>- setStatusStrings</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#secondsFromReset:>- secondsFromReset:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#quitUsageMonitor:>- quitUsageMonitor:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#refreshStats:>- refreshStats:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#openPreferenceController:>- openPreferenceController:</a></code>
+          </span>
+        </li>
+        <li>
+          <span class="tooltipRegion">
+            <code><a href=#makeURLFrom:pagePath:>- makeURLFrom:pagePath:</a></code>
+          </span>
+        </li>
+      </ul>
+      <h2>Instance methods</h2>
+      <h3><a name="init"></a>init</h3>
+      <code class="methodDeclaration">- (id)init</code>
+      <h5>Return value</h5>
+<p>a new <a href="">UMController</a></p>
+      <h5>Discussion</h5>
+<p>Creates a new <a href="">UMController</a> with the instance strings percentTime, resetTime, and violatedFapString set to NA_STRING and the allowance and allowanceRemaining ints set to 0</p>
+<p>      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="awakeFromNib"></a>awakeFromNib</h3>
+      <code class="methodDeclaration">- (void)awakeFromNib</code>
+      <h5>Discussion</h5>
+<p>Configures this status item and its menu. Then makes a call to captureStringsFromWebpage with a nil timer which kicks off the first query to the router (and in turn calls setStatusStrings). An NSTimer is then created and added to the current run loop. The timer's selector is captureStringsFromWebpage and it is hard-coded to fire every 3 minutes. </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="captureStringsFromWebpage:"></a>captureStringsFromWebpage:</h3>
+      <code class="methodDeclaration">- (void)captureStringsFromWebpage:(NSTimer *)        <span class="parameter">timer</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>timer</dt>
+        <dd><p>a timer </p>
+</dd>
+      </dl>
+      <h5>Discussion</h5>
+<p>Captures percentString, resetTime, violatedFapString, allowance, and allowanceRemaining from the contents of the router status page. The timer is ignored, but included so NSTimer can use this method as a selector.</p>
+<p>Notes: An NSURLRequest is created from the URL and the contents of the web page is converted to a string that is then searched to find the above mentioned instance variables. The request is made from inside a try/catch/finally block. If the request fails (probably because we are not connected to the atlas network and therefore there is no router to query) an exeception is thrown and the instance variables (precentString, resetTime, violatedFapString, allowance, and allowanceRemaining) are set to default values. Finally, setStatusStrings is called and the StatusItem title and the StatusItem menu items are set.</p>
+<p>      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="setStatusStrings"></a>setStatusStrings</h3>
+      <code class="methodDeclaration">- (void)setStatusStrings</code>
+      <h5>Discussion</h5>
+<p>Sets the title of this statusItem and all the menu items that have variable (non-constant) titles. </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="secondsFromReset:"></a>secondsFromReset:</h3>
+      <code class="methodDeclaration">- (int)secondsFromReset:(NSString *)        <span class="parameter">timeString</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>timeString</dt>
+        <dd><p>a string representing 'hours remaining' in the form of 23:59:59 </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>the number of seconds in the timeString </p>
+      <h5>Discussion</h5>
+<p>Converts the timeString argument to seconds</p>
+<p>      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="quitUsageMonitor:"></a>quitUsageMonitor:</h3>
+      <code class="methodDeclaration">- (IBAction)quitUsageMonitor:(id)        <span class="parameter">sender</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sender</dt>
+        <dd><p>the sender of the message </p>
+</dd>
+        <dt>sender</dt>
+        <dd><p>the sender of the message </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>an IBAction</p>
+<p>an IBAction </p>
+      <h5>Discussion</h5>
+<p>An action triggered by clicking on this quitMenuItem - quits the program 
+An action triggered by clicking on the quit usage monitor menu item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="refreshStats:"></a>refreshStats:</h3>
+      <code class="methodDeclaration">- (IBAction)refreshStats:(id)        <span class="parameter">sender</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sender</dt>
+        <dd><p>the sender of the message </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>an IBAction </p>
+      <h5>Discussion</h5>
+<p>An action triggered by clicking on the refreshMenuItem - refreshes the stats </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="openPreferenceController:"></a>openPreferenceController:</h3>
+      <code class="methodDeclaration">- (IBAction)openPreferenceController:(id)        <span class="parameter">sender</span>
+</code>
+      <h5>Parameters</h5>
+      <dl class="parameterList">
+        <dt>sender</dt>
+        <dd><p>the sender of the message </p>
+</dd>
+      </dl>
+      <h5>Return value</h5>
+<p>an IBAction </p>
+      <h5>Discussion</h5>
+<p>An action triggered by clicking on the preferences menu item - opens the preferences window </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="makeURLFrom:pagePath:"></a>makeURLFrom:pagePath:</h3>
+      <code class="methodDeclaration">- (NSURL *)makeURLFrom:(NSString *)        <span class="parameter">domain</span>
+ pagePath:(NSString *)        <span class="parameter">pagePath</span>
+</code>
+      <h5>Discussion</h5>
+<p>Creates a url by concatenating the router url and the page path </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h2>Properties</h2>
+      <h3><a name="menu"></a>menu</h3>
+      <code class="methodDeclaration">@property IBOutlet NSMenu *menu</code>
+      <h5>Discussion</h5>
+<p>the menu for our status item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="resetTimeMenuItem"></a>resetTimeMenuItem</h3>
+      <code class="methodDeclaration">@property IBOutlet NSMenuItem *resetTimeMenuItem</code>
+      <h5>Discussion</h5>
+<p>the reset time menu item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="fapMenuItem"></a>fapMenuItem</h3>
+      <code class="methodDeclaration">@property IBOutlet NSMenuItem *fapMenuItem</code>
+      <h5>Discussion</h5>
+<p>the fap (fair access policy) menu item - aka the download restrictions menu item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="allowanceMenuItem"></a>allowanceMenuItem</h3>
+      <code class="methodDeclaration">@property IBOutlet NSMenuItem *allowanceMenuItem</code>
+      <h5>Discussion</h5>
+<p>the allowance menu item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="refreshMenuItem"></a>refreshMenuItem</h3>
+      <code class="methodDeclaration">@property IBOutlet NSMenuItem *refreshMenuItem</code>
+      <h5>Discussion</h5>
+<p>the refresh menu item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="quitMenuItem"></a>quitMenuItem</h3>
+      <code class="methodDeclaration">@property IBOutlet NSMenuItem *quitMenuItem</code>
+      <h5>Discussion</h5>
+<p>the quit menu item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="statusItem"></a>statusItem</h3>
+      <code class="methodDeclaration">@property IBOutlet NSStatusItem *statusItem</code>
+      <h5>Discussion</h5>
+<p>our new status item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="statusBar"></a>statusBar</h3>
+      <code class="methodDeclaration">@property IBOutlet NSStatusBar *statusBar</code>
+      <h5>Discussion</h5>
+<p>the system status bar </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="percentString"></a>percentString</h3>
+      <code class="methodDeclaration">@property NSString *percentString</code>
+      <h5>Discussion</h5>
+<p>the percent string - will be displayed in the status bar </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="resetTime"></a>resetTime</h3>
+      <code class="methodDeclaration">@property NSString *resetTime</code>
+      <h5>Discussion</h5>
+<p>the time our allowance will reset - will be displayed in the resetTime menu item </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="violatedFapString"></a>violatedFapString</h3>
+      <code class="methodDeclaration">@property NSString *violatedFapString</code>
+      <h5>Discussion</h5>
+<p>a string indicating whether or not we have violated our fap </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="allowance"></a>allowance</h3>
+      <code class="methodDeclaration">@property int allowance</code>
+      <h5>Discussion</h5>
+<p>our download allowance </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="allowanceRemaining"></a>allowanceRemaining</h3>
+      <code class="methodDeclaration">@property int allowanceRemaining</code>
+      <h5>Discussion</h5>
+<p>what allowance we have remaining </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+      <h3><a name="prefController"></a>prefController</h3>
+      <code class="methodDeclaration">@property PreferenceController *prefController</code>
+      <h5>Discussion</h5>
+<p>the preference controller </p>
+      <h5>Declared in</h5>
+      <code>UMController.h</code>
+    <hr />
+    <p id="lastUpdated">      (Last updated: 2010-11-20)
+      <br />
+      Back to <a href="../index.html">index</a> / <a href="../hierarchy.html">hierarchy</a>.
+    </p>
+  </div>
+</body>
+</html>

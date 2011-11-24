@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* HughesNet_Usage_MonitorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* HughesNet_Usage_MonitorAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F51259FF12970FF300521A5C /* PreferenceControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F51259FE12970FF300521A5C /* PreferenceControllerTests.m */; };
+		F5AC45EC1295FF62006B735B /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45EB1295FF62006B735B /* PreferenceController.m */; };
+		F5AC45ED1295FF62006B735B /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45EB1295FF62006B735B /* PreferenceController.m */; };
+		F5AC45F91295FFA1006B735B /* LjsGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F01295FFA1006B735B /* LjsGlobals.m */; };
+		F5AC45FA1295FFA1006B735B /* LjsButtonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F31295FFA1006B735B /* LjsButtonHelper.m */; };
+		F5AC45FB1295FFA1006B735B /* LjsTextOutletHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F51295FFA1006B735B /* LjsTextOutletHelper.m */; };
+		F5AC45FC1295FFA1006B735B /* LjsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F81295FFA1006B735B /* LjsWindowController.m */; };
+		F5AC45FD1295FFA1006B735B /* LjsGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F01295FFA1006B735B /* LjsGlobals.m */; };
+		F5AC45FE1295FFA1006B735B /* LjsButtonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F31295FFA1006B735B /* LjsButtonHelper.m */; };
+		F5AC45FF1295FFA1006B735B /* LjsTextOutletHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F51295FFA1006B735B /* LjsTextOutletHelper.m */; };
+		F5AC46001295FFA1006B735B /* LjsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AC45F81295FFA1006B735B /* LjsWindowController.m */; };
+		F5DCDA82127DEFD700219082 /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DCDA81127DEFD700219082 /* GHUnit.framework */; };
+		F5DCDAAE127DF5C600219082 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA2127DF5C600219082 /* DDASLLogger.m */; };
+		F5DCDAAF127DF5C600219082 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA4127DF5C600219082 /* DDFileLogger.m */; };
+		F5DCDAB0127DF5C600219082 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA6127DF5C600219082 /* DDLog.m */; };
+		F5DCDAB1127DF5C600219082 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA8127DF5C600219082 /* DDTTYLogger.m */; };
+		F5DCDAB2127DF5C600219082 /* LjsDefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAAA127DF5C600219082 /* LjsDefaultFormatter.m */; };
+		F5DCDAB3127DF5C600219082 /* LjsTailingFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAAC127DF5C600219082 /* LjsTailingFileManager.m */; };
+		F5DCDAB4127DF5C600219082 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA2127DF5C600219082 /* DDASLLogger.m */; };
+		F5DCDAB5127DF5C600219082 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA4127DF5C600219082 /* DDFileLogger.m */; };
+		F5DCDAB6127DF5C600219082 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA6127DF5C600219082 /* DDLog.m */; };
+		F5DCDAB7127DF5C600219082 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAA8127DF5C600219082 /* DDTTYLogger.m */; };
+		F5DCDAB8127DF5C600219082 /* LjsDefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAAA127DF5C600219082 /* LjsDefaultFormatter.m */; };
+		F5DCDAB9127DF5C600219082 /* LjsTailingFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDAAC127DF5C600219082 /* LjsTailingFileManager.m */; };
+		F5DCDABD127DF5FC00219082 /* appledoc-build-script.sh in Resources */ = {isa = PBXBuildFile; fileRef = F5DCDABB127DF5FC00219082 /* appledoc-build-script.sh */; };
+		F5DCDAC1127DF63900219082 /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = F5DCDAC0127DF63900219082 /* Doxyfile */; };
+		F5DCDB18127DFEEB00219082 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5DCDB17127DFEEB00219082 /* WebKit.framework */; };
+		F5DCDBC0127DFF6100219082 /* UMController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDBBF127DFF6100219082 /* UMController.m */; };
+		F5DCDBC1127DFF6100219082 /* UMController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDBBF127DFF6100219082 /* UMController.m */; };
+		F5DCDBE5127E00FA00219082 /* GHUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDBDE127E00FA00219082 /* GHUnitTestMain.m */; };
+		F5DCDBEC127E016000219082 /* UMControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDBEB127E016000219082 /* UMControllerTests.m */; };
+		F5DCDC58127E096200219082 /* hughes.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5DCDC57127E096200219082 /* hughes.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5DCDA3C127DECEC00219082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = "HughesNet Usage Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* HughesNet_Usage_MonitorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HughesNet_Usage_MonitorAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* HughesNet_Usage_MonitorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HughesNet_Usage_MonitorAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* HughesNet_Usage_Monitor_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HughesNet_Usage_Monitor_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* HughesNet_Usage_Monitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HughesNet_Usage_Monitor-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* HughesNet Usage Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HughesNet Usage Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51259FE12970FF300521A5C /* PreferenceControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceControllerTests.m; sourceTree = "<group>"; };
+		F5AC45EA1295FF62006B735B /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		F5AC45EB1295FF62006B735B /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		F5AC45EF1295FFA1006B735B /* LjsGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LjsGlobals.h; sourceTree = LjsCocoaClasses; };
+		F5AC45F01295FFA1006B735B /* LjsGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LjsGlobals.m; sourceTree = LjsCocoaClasses; };
+		F5AC45F21295FFA1006B735B /* LjsButtonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LjsButtonHelper.h; path = LjsIBOutletHelpers/LjsButtonHelper.h; sourceTree = LjsCocoaClasses; };
+		F5AC45F31295FFA1006B735B /* LjsButtonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LjsButtonHelper.m; path = LjsIBOutletHelpers/LjsButtonHelper.m; sourceTree = LjsCocoaClasses; };
+		F5AC45F41295FFA1006B735B /* LjsTextOutletHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LjsTextOutletHelper.h; path = LjsIBOutletHelpers/LjsTextOutletHelper.h; sourceTree = LjsCocoaClasses; };
+		F5AC45F51295FFA1006B735B /* LjsTextOutletHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LjsTextOutletHelper.m; path = LjsIBOutletHelpers/LjsTextOutletHelper.m; sourceTree = LjsCocoaClasses; };
+		F5AC45F71295FFA1006B735B /* LjsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LjsWindowController.h; path = LjsWindowController/LjsWindowController.h; sourceTree = LjsCocoaClasses; };
+		F5AC45F81295FFA1006B735B /* LjsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LjsWindowController.m; path = LjsWindowController/LjsWindowController.m; sourceTree = LjsCocoaClasses; };
+		F5DCDA34127DECAA00219082 /* HNUMTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNUMTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DCDA36127DECAA00219082 /* HNUMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HNUMTests-Info.plist"; sourceTree = "<group>"; };
+		F5DCDA70127DEE4400219082 /* HNUMTests_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNUMTests_Prefix.pch; sourceTree = "<group>"; };
+		F5DCDA81127DEFD700219082 /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnit.framework; path = /Library/Frameworks/GHUnit.framework; sourceTree = "<absolute>"; };
+		F5DCDAA1127DF5C600219082 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = ../Logging/Lumberjack/DDASLLogger.h; sourceTree = Documentation; };
+		F5DCDAA2127DF5C600219082 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = ../Logging/Lumberjack/DDASLLogger.m; sourceTree = Documentation; };
+		F5DCDAA3127DF5C600219082 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = ../Logging/Lumberjack/DDFileLogger.h; sourceTree = Documentation; };
+		F5DCDAA4127DF5C600219082 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = ../Logging/Lumberjack/DDFileLogger.m; sourceTree = Documentation; };
+		F5DCDAA5127DF5C600219082 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = ../Logging/Lumberjack/DDLog.h; sourceTree = Documentation; };
+		F5DCDAA6127DF5C600219082 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = ../Logging/Lumberjack/DDLog.m; sourceTree = Documentation; };
+		F5DCDAA7127DF5C600219082 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = ../Logging/Lumberjack/DDTTYLogger.h; sourceTree = Documentation; };
+		F5DCDAA8127DF5C600219082 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = ../Logging/Lumberjack/DDTTYLogger.m; sourceTree = Documentation; };
+		F5DCDAA9127DF5C600219082 /* LjsDefaultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LjsDefaultFormatter.h; path = ../Logging/Lumberjack/LjsDefaultFormatter.h; sourceTree = Documentation; };
+		F5DCDAAA127DF5C600219082 /* LjsDefaultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LjsDefaultFormatter.m; path = ../Logging/Lumberjack/LjsDefaultFormatter.m; sourceTree = Documentation; };
+		F5DCDAAB127DF5C600219082 /* LjsTailingFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LjsTailingFileManager.h; path = ../Logging/Lumberjack/LjsTailingFileManager.h; sourceTree = Documentation; };
+		F5DCDAAC127DF5C600219082 /* LjsTailingFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LjsTailingFileManager.m; path = ../Logging/Lumberjack/LjsTailingFileManager.m; sourceTree = Documentation; };
+		F5DCDAAD127DF5C600219082 /* Lumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lumberjack.h; path = ../Logging/Lumberjack/Lumberjack.h; sourceTree = Documentation; };
+		F5DCDABB127DF5FC00219082 /* appledoc-build-script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "appledoc-build-script.sh"; sourceTree = Documentation; };
+		F5DCDAC0127DF63900219082 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		F5DCDB17127DFEEB00219082 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F5DCDBBE127DFF6100219082 /* UMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMController.h; sourceTree = "<group>"; };
+		F5DCDBBF127DFF6100219082 /* UMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMController.m; sourceTree = "<group>"; };
+		F5DCDBDE127E00FA00219082 /* GHUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUnitTestMain.m; sourceTree = "<group>"; };
+		F5DCDBEB127E016000219082 /* UMControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMControllerTests.m; sourceTree = "<group>"; };
+		F5DCDC57127E096200219082 /* hughes.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = hughes.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				F5DCDB18127DFEEB00219082 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DCDA32127DECAA00219082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DCDA82127DEFD700219082 /* GHUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* HughesNet_Usage_MonitorAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* HughesNet_Usage_MonitorAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* HughesNet Usage Monitor.app */,
+				F5DCDA34127DECAA00219082 /* HNUMTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* HughesNet Usage Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC45EE1295FFA1006B735B /* LjsCocoaClasses */,
+				F5DCDBD9127E00FA00219082 /* Tests */,
+				F5DCDAC2127DF67500219082 /* Source */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "HughesNet Usage Monitor";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDA9F127DF5C600219082 /* Logging */,
+				256AC3F00F4B6AF500CF3369 /* HughesNet_Usage_Monitor_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				F5DCDA70127DEE4400219082 /* HNUMTests_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDC57127E096200219082 /* hughes.icns */,
+				F5DCDABA127DF5FC00219082 /* Documentation */,
+				F5DCDA36127DECAA00219082 /* HNUMTests-Info.plist */,
+				8D1107310486CEB800E47090 /* HughesNet_Usage_Monitor-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				F5DCDAC0127DF63900219082 /* Doxyfile */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDB17127DFEEB00219082 /* WebKit.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				F5DCDA81127DEFD700219082 /* GHUnit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5AC45EE1295FFA1006B735B /* LjsCocoaClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC45EF1295FFA1006B735B /* LjsGlobals.h */,
+				F5AC45F01295FFA1006B735B /* LjsGlobals.m */,
+				F5AC45F11295FFA1006B735B /* LjsIBOutletHelpers */,
+				F5AC45F61295FFA1006B735B /* LjsWindowController */,
+			);
+			name = LjsCocoaClasses;
+			sourceTree = LjsCocoaClasses;
+		};
+		F5AC45F11295FFA1006B735B /* LjsIBOutletHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC45F21295FFA1006B735B /* LjsButtonHelper.h */,
+				F5AC45F31295FFA1006B735B /* LjsButtonHelper.m */,
+				F5AC45F41295FFA1006B735B /* LjsTextOutletHelper.h */,
+				F5AC45F51295FFA1006B735B /* LjsTextOutletHelper.m */,
+			);
+			path = LjsIBOutletHelpers;
+			sourceTree = LjsCocoaClasses;
+		};
+		F5AC45F61295FFA1006B735B /* LjsWindowController */ = {
+			isa = PBXGroup;
+			children = (
+				F5AC45F71295FFA1006B735B /* LjsWindowController.h */,
+				F5AC45F81295FFA1006B735B /* LjsWindowController.m */,
+			);
+			path = LjsWindowController;
+			sourceTree = LjsCocoaClasses;
+		};
+		F5DCDA9F127DF5C600219082 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDAA0127DF5C600219082 /* Lumberjack */,
+			);
+			name = Logging;
+			path = ../Logging;
+			sourceTree = Documentation;
+		};
+		F5DCDAA0127DF5C600219082 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDAA1127DF5C600219082 /* DDASLLogger.h */,
+				F5DCDAA2127DF5C600219082 /* DDASLLogger.m */,
+				F5DCDAA3127DF5C600219082 /* DDFileLogger.h */,
+				F5DCDAA4127DF5C600219082 /* DDFileLogger.m */,
+				F5DCDAA5127DF5C600219082 /* DDLog.h */,
+				F5DCDAA6127DF5C600219082 /* DDLog.m */,
+				F5DCDAA7127DF5C600219082 /* DDTTYLogger.h */,
+				F5DCDAA8127DF5C600219082 /* DDTTYLogger.m */,
+				F5DCDAA9127DF5C600219082 /* LjsDefaultFormatter.h */,
+				F5DCDAAA127DF5C600219082 /* LjsDefaultFormatter.m */,
+				F5DCDAAB127DF5C600219082 /* LjsTailingFileManager.h */,
+				F5DCDAAC127DF5C600219082 /* LjsTailingFileManager.m */,
+				F5DCDAAD127DF5C600219082 /* Lumberjack.h */,
+			);
+			name = Lumberjack;
+			path = ../Logging/Lumberjack;
+			sourceTree = Documentation;
+		};
+		F5DCDABA127DF5FC00219082 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDABB127DF5FC00219082 /* appledoc-build-script.sh */,
+			);
+			name = Documentation;
+			sourceTree = Documentation;
+		};
+		F5DCDAC2127DF67500219082 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDBBE127DFF6100219082 /* UMController.h */,
+				F5DCDBBF127DFF6100219082 /* UMController.m */,
+				F5AC45EA1295FF62006B735B /* PreferenceController.h */,
+				F5AC45EB1295FF62006B735B /* PreferenceController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F5DCDBD9127E00FA00219082 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDBDA127E00FA00219082 /* AppTests */,
+				F5DCDBDB127E00FA00219082 /* GHUnit */,
+				F5DCDBE1127E00FA00219082 /* LogicTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F5DCDBDA127E00FA00219082 /* AppTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppTests;
+			sourceTree = "<group>";
+		};
+		F5DCDBDB127E00FA00219082 /* GHUnit */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDBDE127E00FA00219082 /* GHUnitTestMain.m */,
+			);
+			path = GHUnit;
+			sourceTree = "<group>";
+		};
+		F5DCDBE1127E00FA00219082 /* LogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5DCDBEB127E016000219082 /* UMControllerTests.m */,
+				F51259FE12970FF300521A5C /* PreferenceControllerTests.m */,
+			);
+			path = LogicTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* HughesNet Usage Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "HughesNet Usage Monitor" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				F5DCDAD0127DF79D00219082 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HughesNet Usage Monitor";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "HughesNet Usage Monitor";
+			productReference = 8D1107320486CEB800E47090 /* HughesNet Usage Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5DCDA33127DECAA00219082 /* HNUMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DCDA39127DECAA00219082 /* Build configuration list for PBXNativeTarget "HNUMTests" */;
+			buildPhases = (
+				F5DCDA30127DECAA00219082 /* Resources */,
+				F5DCDA31127DECAA00219082 /* Sources */,
+				F5DCDA32127DECAA00219082 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5DCDA3D127DECEC00219082 /* PBXTargetDependency */,
+			);
+			name = HNUMTests;
+			productName = HNUMTests;
+			productReference = F5DCDA34127DECAA00219082 /* HNUMTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HughesNet Usage Monitor" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* HughesNet Usage Monitor */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* HughesNet Usage Monitor */,
+				F5DCDA33127DECAA00219082 /* HNUMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				F5DCDABD127DF5FC00219082 /* appledoc-build-script.sh in Resources */,
+				F5DCDAC1127DF63900219082 /* Doxyfile in Resources */,
+				F5DCDC58127E096200219082 /* hughes.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DCDA30127DECAA00219082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F5DCDAD0127DF79D00219082 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $BUILD_STYLE = Release ] \nthen\n\n  APPLEDOC_PATH=/usr/bin/appledoc\n  TEMPLATE_DIRECTORY=~/.appledoc\n\n  if ! [ -f \"$SOURCE_ROOT/Doxyfile\" ] \n  then \n    echo Doxyfile does not exist in $SOURCE_ROOT\n    exit 1\n   fi\n\n  $APPLEDOC_PATH -p \"$PROJECT_NAME\" -i \"$SOURCE_ROOT/Source\" -o \"$SOURCE_ROOT/Help/$PROJECT_NAME\" --docset -t ~/.appledoc --doxyfile \"$SOURCE_ROOT/Doxyfile\" --clean-temp-files\n\n  rm -f $TEMP_DIR/loadDocSet.scpt\n\n  echo \"tell application \\\"Xcode\\\"\" >> $TEMP_DIR/loadDocSet.scpt\n  echo \"load documentation set with path \\\"/Users/$USER/Library/Developer/Shared/Documentation/DocSets/\\\"\" \n      >> $TEMP_DIR/loadDocSet.scpt\n  echo \"end tell\" >> $TEMP_DIR/loadDocSet.scpt\n\n  #  Run the load-docset applescript command.\n\n  osascript \"$TEMP_DIR/loadDocSet.scpt\"\n\n  exit 0\nfi\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* HughesNet_Usage_MonitorAppDelegate.m in Sources */,
+				F5DCDAB4127DF5C600219082 /* DDASLLogger.m in Sources */,
+				F5DCDAB5127DF5C600219082 /* DDFileLogger.m in Sources */,
+				F5DCDAB6127DF5C600219082 /* DDLog.m in Sources */,
+				F5DCDAB7127DF5C600219082 /* DDTTYLogger.m in Sources */,
+				F5DCDAB8127DF5C600219082 /* LjsDefaultFormatter.m in Sources */,
+				F5DCDAB9127DF5C600219082 /* LjsTailingFileManager.m in Sources */,
+				F5DCDBC0127DFF6100219082 /* UMController.m in Sources */,
+				F5AC45EC1295FF62006B735B /* PreferenceController.m in Sources */,
+				F5AC45F91295FFA1006B735B /* LjsGlobals.m in Sources */,
+				F5AC45FA1295FFA1006B735B /* LjsButtonHelper.m in Sources */,
+				F5AC45FB1295FFA1006B735B /* LjsTextOutletHelper.m in Sources */,
+				F5AC45FC1295FFA1006B735B /* LjsWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DCDA31127DECAA00219082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DCDAAE127DF5C600219082 /* DDASLLogger.m in Sources */,
+				F5DCDAAF127DF5C600219082 /* DDFileLogger.m in Sources */,
+				F5DCDAB0127DF5C600219082 /* DDLog.m in Sources */,
+				F5DCDAB1127DF5C600219082 /* DDTTYLogger.m in Sources */,
+				F5DCDAB2127DF5C600219082 /* LjsDefaultFormatter.m in Sources */,
+				F5DCDAB3127DF5C600219082 /* LjsTailingFileManager.m in Sources */,
+				F5DCDBC1127DFF6100219082 /* UMController.m in Sources */,
+				F5DCDBE5127E00FA00219082 /* GHUnitTestMain.m in Sources */,
+				F5DCDBEC127E016000219082 /* UMControllerTests.m in Sources */,
+				F5AC45ED1295FF62006B735B /* PreferenceController.m in Sources */,
+				F5AC45FD1295FFA1006B735B /* LjsGlobals.m in Sources */,
+				F5AC45FE1295FFA1006B735B /* LjsButtonHelper.m in Sources */,
+				F5AC45FF1295FFA1006B735B /* LjsTextOutletHelper.m in Sources */,
+				F5AC46001295FFA1006B735B /* LjsWindowController.m in Sources */,
+				F51259FF12970FF300521A5C /* PreferenceControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5DCDA3D127DECEC00219082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* HughesNet Usage Monitor */;
+			targetProxy = F5DCDA3C127DECEC00219082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HughesNet_Usage_Monitor_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = LOG_CONFIGURATION_DEBUG;
+				INFOPLIST_FILE = "HughesNet_Usage_Monitor-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "HughesNet Usage Monitor";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = HughesNet_Usage_Monitor_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = LOG_CONFIGURATION_RELEASE;
+				INFOPLIST_FILE = "HughesNet_Usage_Monitor-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "HughesNet Usage Monitor";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		F5DCDA37127DECAA00219082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "HNUMTests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = HNUMTests;
+			};
+			name = Debug;
+		};
+		F5DCDA38127DECAA00219082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "HNUMTests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = HNUMTests;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "HughesNet Usage Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HughesNet Usage Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DCDA39127DECAA00219082 /* Build configuration list for PBXNativeTarget "HNUMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DCDA37127DECAA00219082 /* Debug */,
+				F5DCDA38127DECAA00219082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

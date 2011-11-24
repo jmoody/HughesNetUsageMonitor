@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node>
+            <Name>HughesNet Usage Monitor</Name>
+            <Path>index.html</Path>
+            <Subnodes>
+                <Node type="folder">
+                    <Name>Classes</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <Node>
+                            <Name>PreferenceController</Name>
+                            <Path>Classes/PreferenceController.html</Path>
+                        </Node>
+                        <Node>
+                            <Name>UMController</Name>
+                            <Path>Classes/UMController.html</Path>
+                        </Node>
+                    </Subnodes>
+                </Node>
+                <Node type="folder">
+                    <Name>Class hierarchy</Name>
+                    <Path>hierarchy.html</Path>
+                    <Subnodes>
+                        <Node type="folder">
+                            <Name>NSObject</Name>
+                            <Path>hierarchy.html</Path>
+                            <Subnodes>
+                                <Node>
+                                    <Name>PreferenceController</Name>
+                                    <Path>Classes/PreferenceController.html</Path>
+                                </Node>
+                                <Node>
+                                    <Name>UMController</Name>
+                                    <Path>Classes/UMController.html</Path>
+                                </Node>
+                            </Subnodes>
+                        </Node>
+                    </Subnodes>
+                </Node>
+            </Subnodes>
+        </Node>
+    </TOC>
+</DocSetNodes>

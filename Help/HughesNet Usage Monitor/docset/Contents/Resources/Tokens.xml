@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+    <File path="Classes/PreferenceController.html">
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/cl/PreferenceController</TokenIdentifier>
+            <DeclaredIn>PreferenceController.h</DeclaredIn>
+            <Abstract></Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/PreferenceController/restoreDefaults</TokenIdentifier>
+            <Anchor>restoreDefaults</Anchor>
+            <DeclaredIn>PreferenceController.h</DeclaredIn>
+            <Declaration>- (void)restoreDefaults</Declaration>
+            <Abstract>restores the initial default values </Abstract>
+        </Token>
+    </File>
+    <File path="Classes/UMController.html">
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/cl/UMController</TokenIdentifier>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Abstract>The UMController creates a status bar item with a menu that tracks the download allowance of a HughesNet satellite internet account with an HN9000 router. The percent of the daily allowance remaining is shown in the system status bar. Clicking on the item reveals a menu with information about the reset time, the actual allowance and allowance remaining, whether or not the Fair Access Policy (FAP) has been violated and download restrictions are in place, and a Quit item that will allow the application to be terminated. The appliction runs as a Menulet without a Dock icon.Created by Joshua Moody on 10/28/10. Copyright 2010 The Little Joy Software Company. All rights reserved. </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/menu</TokenIdentifier>
+            <Anchor>menu</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSMenu *menu</Declaration>
+            <Abstract>the menu for our status item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/resetTimeMenuItem</TokenIdentifier>
+            <Anchor>resetTimeMenuItem</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSMenuItem *resetTimeMenuItem</Declaration>
+            <Abstract>the reset time menu item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/fapMenuItem</TokenIdentifier>
+            <Anchor>fapMenuItem</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSMenuItem *fapMenuItem</Declaration>
+            <Abstract>the fap (fair access policy) menu item - aka the download restrictions menu item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/allowanceMenuItem</TokenIdentifier>
+            <Anchor>allowanceMenuItem</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSMenuItem *allowanceMenuItem</Declaration>
+            <Abstract>the allowance menu item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/refreshMenuItem</TokenIdentifier>
+            <Anchor>refreshMenuItem</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSMenuItem *refreshMenuItem</Declaration>
+            <Abstract>the refresh menu item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/quitMenuItem</TokenIdentifier>
+            <Anchor>quitMenuItem</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSMenuItem *quitMenuItem</Declaration>
+            <Abstract>the quit menu item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/statusItem</TokenIdentifier>
+            <Anchor>statusItem</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSStatusItem *statusItem</Declaration>
+            <Abstract>our new status item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/statusBar</TokenIdentifier>
+            <Anchor>statusBar</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property IBOutlet NSStatusBar *statusBar</Declaration>
+            <Abstract>the system status bar </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/percentString</TokenIdentifier>
+            <Anchor>percentString</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property NSString *percentString</Declaration>
+            <Abstract>the percent string - will be displayed in the status bar </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/resetTime</TokenIdentifier>
+            <Anchor>resetTime</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property NSString *resetTime</Declaration>
+            <Abstract>the time our allowance will reset - will be displayed in the resetTime menu item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/violatedFapString</TokenIdentifier>
+            <Anchor>violatedFapString</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property NSString *violatedFapString</Declaration>
+            <Abstract>a string indicating whether or not we have violated our fap </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/allowance</TokenIdentifier>
+            <Anchor>allowance</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property int allowance</Declaration>
+            <Abstract>our download allowance </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/allowanceRemaining</TokenIdentifier>
+            <Anchor>allowanceRemaining</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property int allowanceRemaining</Declaration>
+            <Abstract>what allowance we have remaining </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/prefController</TokenIdentifier>
+            <Anchor>prefController</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>@property PreferenceController *prefController</Declaration>
+            <Abstract>the preference controller </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/init</TokenIdentifier>
+            <Anchor>init</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (id)init</Declaration>
+            <Abstract>Creates a new UMController with the instance strings percentTime, resetTime, and violatedFapString set to NA_STRING and the allowance and allowanceRemaining ints set to 0</Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/awakeFromNib</TokenIdentifier>
+            <Anchor>awakeFromNib</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (void)awakeFromNib</Declaration>
+            <Abstract>Configures this status item and its menu. Then makes a call to captureStringsFromWebpage with a nil timer which kicks off the first query to the router (and in turn calls setStatusStrings). An NSTimer is then created and added to the current run loop. The timer's selector is captureStringsFromWebpage and it is hard-coded to fire every 3 minutes. </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/captureStringsFromWebpage:</TokenIdentifier>
+            <Anchor>captureStringsFromWebpage:</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (void)captureStringsFromWebpage:(NSTimer *)timer </Declaration>
+            <Abstract>Captures percentString, resetTime, violatedFapString, allowance, and allowanceRemaining from the contents of the router status page. The timer is ignored, but included so NSTimer can use this method as a selector.Notes: An NSURLRequest is created from the URL and the contents of the web page is converted to a string that is then searched to find the above mentioned instance variables. The request is made from inside a try/catch/finally block. If the request fails (probably because we are not connected to the atlas network and therefore there is no router to query) an exeception is thrown and the instance variables (precentString, resetTime, violatedFapString, allowance, and allowanceRemaining) are set to default values. Finally, setStatusStrings is called and the StatusItem title and the StatusItem menu items are set.</Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/setStatusStrings</TokenIdentifier>
+            <Anchor>setStatusStrings</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (void)setStatusStrings</Declaration>
+            <Abstract>Sets the title of this statusItem and all the menu items that have variable (non-constant) titles. </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/secondsFromReset:</TokenIdentifier>
+            <Anchor>secondsFromReset:</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (int)secondsFromReset:(NSString *)timeString </Declaration>
+            <Abstract>Converts the timeString argument to seconds</Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/quitUsageMonitor:</TokenIdentifier>
+            <Anchor>quitUsageMonitor:</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (IBAction)quitUsageMonitor:(id)sender </Declaration>
+            <Abstract>An action triggered by clicking on this quitMenuItem - quits the program 
+An action triggered by clicking on the quit usage monitor menu item </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/refreshStats:</TokenIdentifier>
+            <Anchor>refreshStats:</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (IBAction)refreshStats:(id)sender </Declaration>
+            <Abstract>An action triggered by clicking on the refreshMenuItem - refreshes the stats </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/openPreferenceController:</TokenIdentifier>
+            <Anchor>openPreferenceController:</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (IBAction)openPreferenceController:(id)sender </Declaration>
+            <Abstract>An action triggered by clicking on the preferences menu item - opens the preferences window </Abstract>
+        </Token>
+        <Token>
+            <TokenIdentifier>//apple_ref/occ/instm/UMController/makeURLFrom:pagePath:</TokenIdentifier>
+            <Anchor>makeURLFrom:pagePath:</Anchor>
+            <DeclaredIn>UMController.h</DeclaredIn>
+            <Declaration>- (NSURL *)makeURLFrom:(NSString *)domain pagePath:(NSString *)pagePath </Declaration>
+            <Abstract>Creates a url by concatenating the router url and the page path </Abstract>
+        </Token>
+    </File>
+</Tokens>
